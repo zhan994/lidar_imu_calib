@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="lidar_imu_calib" type="calib_exR_lidar2imu_node" name="calib_exR_lidar2imu_node" output="screen">
+        <param name="/lidar_topic" value="/ns2/rslidar_points"/>
+        <param name="/imu_topic" value="/imu"/>
+        <param name="/bag_file" value="/home/cn/file/data/auto_scanner/calib_2lidar_imu/calib_horizon_lidar.bag"/>
+    </node>
+</launch>
